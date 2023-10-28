@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <style>
+            html, body {
+                width: 100vw;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .logo {
+                position: fixed;
+                width: 25vh;
+                height: 25vh;
+                top: 37.5vh;
+                left: calc((100vw - 25vh)/2);
+                background: rgba(255,255,255,0.5);
+                border-radius: 100%;
+                border: solid 1vh rgba(0,0,0,.5);
+                z-index: 1000;
+                backdrop-filter: blur(20px);
+                animation-name: example;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-timing-function: ease-in-out;
+                box-shadow: 0px 0px 80px 20px #000;
+
+            }
+
+            @keyframes example {
+                from {transform: scale(1)}
+                to {transform: scale(0.75)}
+                }
+
+            .text-content {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 8vh;
+                text-align: center;
+                margin-top: calc(12.5vh - 8vh);
+                line-height: 8vh;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="logo">
+            <div class="text-content">
+            18<br>Alice
+            </div>
+        </div>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kiNSWFEyDQM?si=dK5y8Kr-k-MEOGR6&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          
+    </body>
+    <script>
+    </script>
+</html>
